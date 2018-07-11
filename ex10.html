@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <p id="avg"></p>
+    <p id="grade"></p>
+    <script>
+        var stud = [['David', 80], ['Vinod', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+        var avgmar = 0;
+        for (var i = 0; i < stud.length; i++) {
+            avgmar += stud[i][1];
+            var avg = (avgmar / stud.length);
+        }
+        document.getElementById("avg").innerHTML = "AvgMarks" + avg;
+
+       if (avg < 100) {
+            document.getElementById("grade").innerHTML = "Grade : A";
+        }
+        else if (avg < 90) {
+            document.getElementById("grade").innerHTML = "Grade : B";
+        }
+        else if (avg < 80) {
+            document.getElementById("grade").innerHTML = "Grade : C";
+        }
+        else if (avg < 70) {
+            document.getElementById("grade").innerHTML = "Grade : D";
+        }
+        else (avg < 60)
+        {
+            document.getElementById("grade").innerHTML = "Grade : F";
+        }
+    </script>
+</body>
+
+</html>

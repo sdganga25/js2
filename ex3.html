@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var a = window.prompt();
+        var str = a.toString();
+        var res = [str[0]];
+        for (var x = 1; x < str.length; x++) {
+            if ((str[x - 1] % 2 == 0) && (str[x] % 2 == 0)) {
+                res.push(' - ', str[x]);
+            }
+            else {
+                res.push(str[x]);
+            }
+        }
+        document.getElementById("demo").innerHTML = res.join(' ');
+    </script>
+</body>
+
+</html>

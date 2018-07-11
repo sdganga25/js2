@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var jsonStr = '{"mike":"Book","jason":"sweater","chels":"ipad"}';
+            var res = JSON.parse(jsonStr);
+            document.getElementById("demo").innerHTML=res.jason;
+        </script>
+    </body>
+</html>

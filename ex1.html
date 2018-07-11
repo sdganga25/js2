@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<body>
+    <h1>Current Date and Time</h1>
+    <p id="demo"></p>
+    <p id="time"></p>
+    <script>
+        var today = new Date();
+        var month = today.getMonth() + 1;
+        var dd = today.getDate();
+        var year = today.getFullYear();
+        var date = month + '/' + dd + '/' + year;
+        document.getElementById("demo").innerHTML =date;
+        document.getElementById("time").innerHTML = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+    </script>
+</body>
+
+</html>

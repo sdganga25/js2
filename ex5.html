@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <p id="demo"></p>
+    <script>
+       var a = ['a','b','c','b','a'];
+       function remdup(arr)
+       {
+           var new_arr=[];
+           for(var i=0;i<arr.length;i++)
+           {
+               if(new_arr.indexOf(arr[i])==-1){
+                new_arr.push(arr[i]);
+                }
+           }
+       
+       return new_arr;
+       }
+       document.getElementById("demo").innerHTML=remdup(a);
+
+    </script>
+</body>
+
+</html>
